@@ -67,7 +67,7 @@ class CustomAuthTokenlogin(ObtainAuthToken):
         })
  
 
- #Here suing djangomodelpermission we give user only the right to view the task in todoapi
+ #Here using djangomodelpermission we give user only the right to view the task in todoapi
 #Django CRUD operation related classes
 class TodoList(generics.ListCreateAPIView):
     permission_classes =  [DjangoModelPermissions]
